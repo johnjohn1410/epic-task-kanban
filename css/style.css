@@ -1,0 +1,16 @@
+body{
+    padding: 1rem;
+}
+
+#lista-de-tarefas{
+   /* @media (min-width: 768px) {
+        grid-template-columns:1fr 1fr ;
+    }
+    @media (min-width: 1024px) {
+        grid-template-columns:1fr 1fr 1fr ;
+    }
+    */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+    gap: 1rem;
+}
