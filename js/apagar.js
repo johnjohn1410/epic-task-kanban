@@ -4,6 +4,5 @@ function apagar(id){
 
     const tarefas = JSON.parse(localStorage.getItem("tarefas"))
     const tarefasAtualizadas = tarefas.filter( (t) => t.id !== id )
-    Storage.setItem("tarefas", JSON.stringify(tarefasAtualizadas))
-
+    localStorage.setItem("tarefas", JSON.stringify(tarefasAtualizadas))
 }
